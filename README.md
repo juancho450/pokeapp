@@ -1,4 +1,4 @@
-# 🎮 Pokémon App
+# 🎮 PokeApp
 
 Una aplicación que consume la API de Pokémon, con una interfaz amigable para explorar y buscar información sobre diferentes Pokémon.
 
