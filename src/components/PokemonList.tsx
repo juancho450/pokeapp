@@ -104,7 +104,7 @@ const PokemonList = () => {
           </div>
           
           <div className="flex justify-center items-center mt-10 mb-4">
-            <div className="inline-flex rounded-md shadow-sm">
+            <div className="inline-flex rounded-full shadow-sm">
               <button
                 onClick={handlePrevPage}
                 disabled={page === 0}
@@ -113,7 +113,8 @@ const PokemonList = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
-                Anterior
+                 <span className='hidden md:block'>Anterior</span>
+               
               </button>
               
               <div className="px-6 py-3 bg-gray-100 text-gray-800 font-medium border-t border-b border-gray-300 flex items-center">
@@ -125,7 +126,8 @@ const PokemonList = () => {
                 disabled={page >= totalPages - 1}
                 className="px-6 py-3 rounded-r-full bg-[#3B5BA7] text-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-blue-700 transition-colors flex items-center"
               >
-                Siguiente
+                <span className='hidden md:block'>Siguiente</span>
+              
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
